@@ -7,7 +7,7 @@ import * as fs from 'fs'
 
 fs.readFileSync('package.json')
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000
 
 // Create an express app
 const app = express()
